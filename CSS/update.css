@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.line-down{
+    border-bottom: 1px solid #32aad6;
+    width: 100%;
+    height: 40px;
+    background-color:  #154054;
+}
+
+/* ------------------------navbar-1----------------------------- */
+.navbar-1{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.navbar-1 span{
+    line-height: 40px;
+    color: rgb(185, 185, 185);
+}
+.navbar-1 ul{
+    display: inline;
+    list-style: none;
+}
+.navbar-1 li{
+    display: inline-block;
+}
+.navbar-1 li a{
+    color: rgb(185, 185, 185);
+    margin-left: 10px;
+    padding-left: 10px ;
+    border-left: 1px solid  rgb(185, 185, 185);
+    text-decoration: none;
+}
+.navbar-1 li a:hover{
+    color: #32aad6;
+}
+.search{
+    float: right;
+    line-height: 36px;
+}
+.search input{
+    background-color: rgb(247, 247, 247);
+    border: 1px solid #32aad6;
+    outline: none;
+    width: 250px;
+    color: #000;
+    height: 25px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+.search i{
+    cursor: pointer;
+    font-size: 14px;
+    color: #32aad6;
+    margin-left: -30px;
+}
+
+@media (max-width: 930px){
+    .navbar-1{
+        width: 90%;
+    }
+    .navbar-1 li a{
+        line-height: 40px;
+    }
+    .navbar-1 #n-border{
+        border-left: none;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    .navbar-1 span{
+        display: none;
+    }
+
+}
+@media (max-width: 460px){
+    .search input{
+        width: 150px;
+    }
+}
+@media (max-width: 300px){
+    .search input{
+        display: none;
+    }
+}
+
+/* -----------------------navbar-2------------------------- */
+.line-up{
+    height: 70px;
+    background-color: #154054;
+}
+.navbar-2{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: -10px;
+}
+.navbar-2 .navbar-brand {
+    color: rgb(233, 233, 233);
+}
+.navbar-2 .navbar-brand h2{
+    font-size: 40px;
+    line-height: 70px;
+    font-family: cursive;
+    float: left;
+    margin-bottom: 0px;
+    margin-top: -8px;
+}
+.navbar-2 .navbar-brand small{
+    font-size: 28px;
+    font-family: cursive;
+}
+.navbar-2 ul{
+    margin-bottom: 0px;
+    list-style: none;
+    float: right;
+    line-height: 70px;
+}
+.navbar-2 ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+.navbar-2 li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.navbar-2 li i{
+    padding-right: 10px;
+}
+.navbar-2 #active, li a:hover{
+    color: #32aad6;
+    transition: 0.2s;
+}
+.checkbtn{
+    margin-bottom: 0px;
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 70px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 930px){
+    .navbar-2{
+        width: 90%;
+    }
+    .navbar-2 .navbar-brand h2{
+        font-size: 35px;
+    }
+    .navbar-2 li a{
+        font-size: 15px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .navbar-2 ul{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background-color: #69696b;
+        top: 110px;
+        right: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+    .navbar-2 ul li{
+        display: block;
+        margin: 0px;
+    }
+    .navbar-2 ul li a{
+        font-size: 18px;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+}
+
+
+
+/* --------------------------- Sua thong tin ---------------------------- */
+.container{
+    margin-top: 120px;
+}
+.container p #active{
+    color: #32aad6;
+}
+.container p a{
+    text-decoration: none;
+    color: #575454;
+    font-size: 15px;
+}
+.container p a:hover{
+    color: #32aad6;
+    transition: 0.3s;
+}
+.login{
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 35%;
+}
+.login h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login label{
+    margin: 20px 0px 5px 0px;
+}
+.login input{
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #575454;
+}
+.login .btn{
+    margin-top: 49px;
+    margin-bottom: 30px;
+    background-color: #32aad6;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
